@@ -27,9 +27,6 @@ function draw (){
 	ellipse (150,200,80,20)
     } // close if
 
-    
-
-	
 }//close draw
 
 //use mousePresses to find exact coordinates

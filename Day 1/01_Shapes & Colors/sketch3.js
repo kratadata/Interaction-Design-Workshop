@@ -1,4 +1,4 @@
-// try to recreate the image found in assets/SimpleForms.png
+// Recreate the image found in assets/SimpleForms.png
 
 function setup() {
   createCanvas(400, 400);

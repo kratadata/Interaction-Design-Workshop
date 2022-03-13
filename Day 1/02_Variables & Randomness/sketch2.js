@@ -18,18 +18,20 @@ function setup() {
   float1 = parseInt(float1);
 
   //converting to float variable.toFixed(number of digits after a point)
-  //here a variable is created an define directly in the function
-  let int2 = int2.toFixed(2);
+  //here a variable is created and defined directly in the setup function
+  let int3 = int2.toFixed(2);
 
 
   text("int1 is a " + typeof int1 + " and its value is " + int1, 100,100);
   text("float1 is a " + typeof float1 + " and its value is " + float1, 100,150);
-  text("int2 is a " + typeof int2 + " and its value is " + int2, 100,200);
+  text("int3 is a " + typeof int3 + " and its value is " + int3, 100,200);
 
 }
 
 function draw() {
   //uncomment this to see what happens
-  //console.log(int2)
+  //console.log(int3)
+
+  
 
 }

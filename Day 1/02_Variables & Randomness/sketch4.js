@@ -1,8 +1,6 @@
 /*The random function gives you a random value between two parameters.
-Since random is a function it cannot be used outside of "function scope"
 By default, random() produces different results each time the program is run. 
-randomSeed(number)forces random functionto return the same pseudo-random numbers 
-each time the software is run.
+randomSeed(number) forces random function to return the same pseudo-random numbers each time the software is run.
 */
 
 let circleX;
@@ -10,7 +8,7 @@ let circleY;
 let circleDiameter;
 let width = 500;
 let height = 400;
-
+let aColo, bColor, cColor;
 
 function setup() {
   createCanvas(width, height);
@@ -19,6 +17,9 @@ function setup() {
   circleX = random(0, width);
   circleY = random(0, height);
   circleDiameter = random(50,100);
+  aColor = color(random(255), random(255), random(255));
+  bColor = color(random(255), random(255), random(255));
+  cColor = color(random(255), random(255), random(255));
   
 }
 
@@ -26,19 +27,23 @@ function draw() {
     
 //randomSeed(132914)
 
+//notice the difference if behaviour if random is called inside of draw!
 /*
 circleX = random(0, width);
 circleY = random(0, height);
 circleDiameter = random(50,100);
+aColor = color(random(255), random(255), random(255));
+bColor = color(random(255), random(255), random(255));
+cColor = color(random(255), random(255), random(255));
 */
 
 
   background(255);
-  fill(255,0,0)
+  fill(aColor);
   circle(circleX, circleY, circleDiameter);
-  fill(255,255,0)
+  fill(bColor);
   circle(circleX, circleY, circleDiameter/2);
-  fill(0,255,0)
+  fill(cColor);
   circle(circleX, circleY, circleDiameter/4);
   
 }

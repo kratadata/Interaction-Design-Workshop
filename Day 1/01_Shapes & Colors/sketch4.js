@@ -1,38 +1,63 @@
-//While it's common to define colours with a 24bit RGB value (Red, Green, Blue), 
-//there are some other alternatives to working with colour. In HSB mode, 
-//we set the Hue, Saturation, and Balance. This is also known as HSV (See assets/HSV.png).
-
-//HUE is typically selected with 0 to 360 degrees, with saturation 0-100 
-//and brightness 0-100. This can differ somewhat between programming languages.
-//We can change the colour mode with the following command: colorMode(HSB)
-
-var r1,r2;
+//Another interesting function of p5 is blendMode(), which works similarly to
+//the blending modes found in Photoshop/After Effects etc.
+//Here you can find all the different modes https://p5js.org/reference/#/p5/blendMode
 
 function setup() {
-	createCanvas(windowWidth, windowHeight);
-	colorMode(HSB);
-	background(0);
+	createCanvas(1200,300);
+	background(0);	
 	noStroke();
-	r1 = random(20,100);
-	r2 = random(20,100);
 }
 
 function draw() {
-	background(0,0,0,0.01);
-	myShape(mouseX, mouseY, r1, myHueAngle());
+
+	//if you want to exclude the background from blending you need to 
+	//call blendMode(BLEND) before calling background() function
+	blendMode(BLEND);
+	background(0);
+
+	
+	fill(255,0,0);
+	circle(100, height/2, 100);
+
+
+	fill(255,0,0);
+	circle(300, height/2, 100);
+
+	
+	fill(255,0,0);
+	circle(500, height/2, 100);
+
+	
+	fill(255,0,0);
+	circle(700, height/2, 100);
+
+
+	fill(255,0,0);
+	circle(900, height/2, 100);
+
+	
+	fill(255,0,0);
+	stroke(100)
+	circle(1100, height/2, 100);
+
+	if (mouseX > 0 && mouseX < 200){
+		blendMode(ADD);
+	} else if (mouseX > 200 && mouseX < 400) {
+		blendMode(LIGHTEST);
+	} else if (mouseX > 400 && mouseX < 600) {
+		blendMode(DIFFERENCE);
+	} else if (mouseX > 600 && mouseX < 800) {
+		blendMode(MULTIPLY);
+	} else if (mouseX > 800 && mouseX < 1000) {
+		blendMode(OVERLAY);
+	}else {
+		blendMode(DODGE);
+	}	
+
+	
+	fill(0,0,255);
+	circle(mouseX, mouseY + 20, 100)
+	fill(0,255,0);
+	circle(mouseX , mouseY - 20, 100)
 }
 
-function myHueAngle() {
-	var myHue = frameCount % 360; 
-	return myHue;
-}
-
-function mousePressed() {
-	r1 = random(20,100);
-	r2 = random(20,100);
-}
-
-function myShape(x, y, radius, hue) {
-	fill(hue, 100,100);
-	ellipse(x,y,radius);
-}

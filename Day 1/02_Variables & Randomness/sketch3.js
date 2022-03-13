@@ -1,5 +1,5 @@
-// You can use the variables just like you would use any value,
-// which means you can use them as arguments!
+// You can use the variables just like you would use any values.
+// Thi means you can use variables as arguments!
 
 
 let circleX = 150;

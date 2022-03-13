@@ -15,7 +15,7 @@ function draw() {
 
 	if(mouseX > 0 && mouseX < 150) {
 		circle(mouseX, mouseY, 50)
-	} else  if (mouseX > 150 && mouseX < 250){
+	} else if (mouseX > 150 && mouseX < 250){
 		rect(mouseX, mouseY, 50, 50)
 	} else {
         triangle(mouseX, mouseY, mouseX - 40, mouseY - 40,mouseX + 40, mouseY -40 )
