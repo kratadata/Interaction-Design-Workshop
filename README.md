@@ -73,8 +73,7 @@ Final Presentation
 
 
 # Contact
-www.zybinska.io
-Instagram/Github @kratadata
-
+www.zybinska.io. 
+Instagram/Github @kratadata  
 hi@zybinska.io
 
