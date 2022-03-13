@@ -73,9 +73,9 @@ Final Presentation
 
 
 # Connect
-[Website](https://zybinska.io/) 
-[Github](https://github.com/kratadata/) 
-[Instagram](https://www.instagram.com/kratadata/) 
-[Linkedin](https://www.linkedin.com/in/zybinska/) 
+[Website](https://zybinska.io/)     
+[Github](https://github.com/kratadata/)     
+[Instagram](https://www.instagram.com/kratadata/)     
+[Linkedin](https://www.linkedin.com/in/zybinska/)     
 hi@zybinska.io
 
