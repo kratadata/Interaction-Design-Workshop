@@ -1,4 +1,4 @@
-# EXAMPLES FROM THE WORKSHOP
+# SOLUTIONS TO THE EXERCISES
 [Examples](https://github.com/kratadata/IDW_Examples)
 
 # Interaction-Design-Workshop
