@@ -1,6 +1,7 @@
+
+
 # Interaction-Design-Workshop
 LET'S GET PHYSICAL | Warsaw March 2022
-
 
 
 # Abstract
@@ -70,7 +71,7 @@ Hardware:
 9 - 12 Wrap up  
 Final Presentation
 
-#Ressources
+# Ressources
 
 [Awesome Creative Coding Collection](https://github.com/terkelg/awesome-creative-coding#books)   
 [Oliver Steele's Openprocessing course](https://notes.osteele.com/olivers-p5js-resources)    
@@ -80,12 +81,11 @@ Final Presentation
 [Generative Design](http://www.generative-gestaltung.de)   
 
 
-
-
 # Connect
 [Website](https://zybinska.io/)     
 [Github](https://github.com/kratadata/)     
 [Instagram](https://www.instagram.com/kratadata/)     
 [Linkedin](https://www.linkedin.com/in/zybinska/)     
 hi@zybinska.io
+Discord Username : Krata (Paulina)#7658
 
