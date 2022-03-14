@@ -70,6 +70,16 @@ Hardware:
 9 - 12 Wrap up  
 Final Presentation
 
+#Ressources
+
+[Awesome Creative Coding Collection] (https://github.com/terkelg/awesome-creative-coding#books)
+[Oliver Steele's Openprocessing course] (https://notes.osteele.com/olivers-p5js-resources)
+[The Coding Train] (https://pages.github.com)
+[Experiments with p5js] (https://purin.co/Experiments-with-P5-js)
+[Generative Artistry] (https://generativeartistry.com/tutorials/)
+[Generative Design] (http://www.generative-gestaltung.de)
+
+
 
 
 # Connect
