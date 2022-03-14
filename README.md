@@ -1,4 +1,5 @@
-
+# EXAMPLES FROM THE WORKSHOP
+[Examples](https://github.com/kratadata/IDW_Examples)
 
 # Interaction-Design-Workshop
 LET'S GET PHYSICAL | Warsaw March 2022
@@ -88,4 +89,5 @@ Final Presentation
 [Linkedin](https://www.linkedin.com/in/zybinska/)     
 hi@zybinska.io
 Discord Username : Krata (Paulina)#7658
+
 
