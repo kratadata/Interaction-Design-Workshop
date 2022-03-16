@@ -81,6 +81,30 @@ Final Presentation
 [Generative Artistry](https://generativeartistry.com/tutorials/)   
 [Generative Design](http://www.generative-gestaltung.de)   
 
+# Artist Names
+
+
+Vera Molnar   
+George Ness    
+Frieder Nake    
+Manfred Mohr    
+Aurelie Neumors   
+François Morellet   
+
+Modern    
+Zach Lieberman    
+Ted Devis   
+Tim Rodenbröker   
+Tyler Hobbs   
+Raoelf Knolf    
+Manoloide   
+Matt Deslauriers    
+Sean Zellmer    
+Alida Sun   
+Rafael Rozendaal    
+Marius Watz   
+Dirk Koy    
+
 
 # Connect
 [Website](https://zybinska.io/)     
