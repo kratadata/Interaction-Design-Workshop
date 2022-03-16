@@ -81,8 +81,7 @@ Final Presentation
 [Generative Artistry](https://generativeartistry.com/tutorials/)   
 [Generative Design](http://www.generative-gestaltung.de)   
 
-# Artist Names
-
+# Computer Artist / Creative Coders
 
 Vera Molnar   
 George Ness    
