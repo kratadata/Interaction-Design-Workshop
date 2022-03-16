@@ -91,7 +91,6 @@ Manfred Mohr
 Aurelie Neumors   
 François Morellet   
 
-Modern    
 Zach Lieberman    
 Ted Devis   
 Tim Rodenbröker   
