@@ -1,13 +1,18 @@
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  background(100);
+  //
+  /*
+  this is a comment block
+  that spans across multiple lines
+  */
+
   //what happens to square/rect if you remove the following line?
   rectMode(CENTER);
 }
 
 function draw() {
-  background(255);
+  background(255, 255, 255);
   stroke(78, 200, 45);
   fill(255, 255, 0);
   ellipse(500, 100, 50, 50);

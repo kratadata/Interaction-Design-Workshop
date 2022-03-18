@@ -2,13 +2,14 @@
 // Thi means you can use variables as arguments!
 
 
-let circleX = 150;
-let circleY = 200;
-let circleDiameter = 100;
+let circleX = 100;
+let circleY = 100;
+let circleDiameter = 200;
 
 function setup() {
   createCanvas(400, 400);
   noStroke()
+  frameRate(10)
 }
 
 function draw() {
@@ -22,9 +23,9 @@ function draw() {
   
   //uncomment the lines one by one 
   
-  //circleX++
-  //circleY--
-  //circleDiameter = frameCount % 60;
+  circleX--
+  circleY++
+   circleDiameter = frameCount % 60;
   
 }
 

@@ -1,15 +1,23 @@
+var offset = 0;
+
+
 function setup() {
   createCanvas(windowWidth, windowHeight);
 }
 
 function draw() {
   background(255);
+  smiley(200 - offset, 150);
+
+
   fill(0);
-  var offset = mouseY / 2;
-  smiley(mouseX - offset, mouseY - offset);
+  offset = mouseY / 2;
+ /*  smiley(mouseX - offset, mouseY - offset);
   smiley(mouseX - offset, mouseY + offset);
   smiley(mouseX + offset, mouseY + offset);
-  smiley(mouseX + offset, mouseY - offset);
+  smiley(mouseX + offset, mouseY - offset); */
+
+
 }
 
 function smiley(smileyX, smileyY) {

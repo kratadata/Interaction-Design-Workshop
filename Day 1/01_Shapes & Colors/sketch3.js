@@ -1,10 +1,10 @@
 // Recreate the image found in assets/SimpleForms.png
 
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(800, 400);
   rectMode(CENTER);
 }
 
 function draw() {
-  background(220);
+  background(157, 237, 206);
 }

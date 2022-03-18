@@ -1,10 +1,10 @@
 
-#define OUTPUT_PIN A0
+#define OUTPUT_PIN 9
 const int DELAY_MS = 10;
 
 void setup() {
-  Serial.begin(9600);
-  pinMode(OUTPUT_PIN, OUTPUT);
+  Serial.begin(115200);
+  //pinMode(OUTPUT_PIN, OUTPUT);
 }
 
 void loop() {
@@ -23,10 +23,8 @@ void loop() {
   if(Serial.available() > 0){
     // read string until the end of the line
     String rcvdSerialData = Serial.readStringUntil('\n'); 
-    analogWrite(OUTPUT_PIN, rcvdSerialData.toInt());
+    digitalWrite(OUTPUT_PIN, rcvdSerialData.toInt());
   }   
     delay(DELAY_MS);
 
- 
-  
 }

@@ -33,8 +33,8 @@ void loop() {
 
   // The fraction of the circle diameter
   if (lastValue != currentValue) {
-    float sizeFrac = currentValue / (float)maxValue;
-    Serial.print("size ");
+    float sizeFrac = currentValue;
+    Serial.print("amplitude ");
     Serial.println(sizeFrac, 4);
   }
 

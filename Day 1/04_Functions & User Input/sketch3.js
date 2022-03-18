@@ -1,32 +1,40 @@
-let r = 0;
-let g = 0;
-let b = 0;
+let xPos; 
+let randomCol;
+let fillColor;
 
 function setup() {
   createCanvas(400, 400);
+  background(100);
+
+  randomCol = color(255, 255,255);
+  fillColor = 255;
 }
 
 function draw() {
-  background(r, g, b);
+  background(randomCol);
+  if(mouseIsPressed){
+    xPos = mouseX;
+    fill(fillColor)
+    circle(xPos, mouseY, 50)
+  }else {
+    xPos++;
+  }
+  
+  if(keyIsPressed){
+    if (key == "w" ) {
+      fillColor = color(random(255), random(255), random(255),random(255));
+    }
+  }
 }
 
 function mousePressed() {
-	//green
-  r = 0;
-  g = 255;
-  b = 0;
+ 
 }
 
 function mouseReleased() {
-	//red
-  r = 255;
-  g = 0;
-  b = 0;
+   square(mouseX, mouseY, 50 )
 }
 
 function mouseDragged() {
-	//blue
-  r = 0;
-  g = 0;
-  b = 255;
+  randomCol = color(random(255), random(255), random(255),random(255));
 }

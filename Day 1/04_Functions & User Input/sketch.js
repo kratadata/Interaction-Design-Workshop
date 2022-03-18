@@ -1,4 +1,7 @@
 let randomColor;
+let xPos;
+let yPos;
+let size;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -10,12 +13,14 @@ function setup() {
    
 function draw(){
   fill(randomColor); 
-  var size = random(10, 100); 
-  ellipse(random(0, width), random(0, height), size, size); 
+  size = random(10, 100);
+  xPos =random(0, width);
+  yPos = random(0, height);
+  ellipse(xPos, yPos, size * 2, size); 
 }
 
 function keyPressed() {
-	if (key == "n") {
+	if (key == "a") { //keyCode == UP_ARROW
 	   randomColor = color(random(0,255), random(0,255), random(0,255))
 	}
 }

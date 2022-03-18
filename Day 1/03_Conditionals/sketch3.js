@@ -11,7 +11,7 @@ function draw (){
 	circle(150, 150, dia);
 	
 	//if both conditions are met
-	
+	//&&&&&&&&&&&&&&&&&&&
 	if (mouseX > 50 && mouseX < 250){
 		
 	//then draw the face

@@ -5,11 +5,11 @@ function setup() {
 }
 
 function draw() {
-	
+
 	if (mouseIsPressed) {
-    background(0);
+    	background(0 );
   } else {
-    background(255);
+    	background(255, 20);
   }
 	fill(255);
 	ellipse(mouseX, mouseY, 50, 50);

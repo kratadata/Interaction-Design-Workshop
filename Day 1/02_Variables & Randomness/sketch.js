@@ -16,7 +16,7 @@ const num = 23012;
 function setup() {
 	createCanvas(windowWidth, windowHeight);
 	background(255);
-	textSize(20);
+
 
   text("int1 is a " + typeof int1 + " and its value is " + int1, 100,100);
   text("float1 is a " + typeof float1 + " and its value is " + float1, 100,150);
@@ -31,7 +31,7 @@ function draw() {
 }
 
 function mousePressed(){
-  let int3 = int1 + int2;
+  let int3 = int1 + int2; //var int3
   let string2 = string1 + float1;
   let bool2 = !bool1;
 

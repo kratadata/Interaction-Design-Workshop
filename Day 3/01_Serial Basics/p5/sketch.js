@@ -1,9 +1,17 @@
 
 let serial; // the Serial object
 let serialOptions = { baudRate: 115200  };
+let bgColor = 255;
+
+let timestampLastTransmit = 0;
+const MIN_TIME_BETWEEN_TRANSMISSIONS_MS = 1000;
 
 function setup() {
   createCanvas(800, 800);
+
+  background(255);
+  fill(0)
+  rect(width/2, 0, width/2, height);
 
   // Setup Web Serial using serial.js
   serial = new Serial();
@@ -17,7 +25,12 @@ function setup() {
 }
 
 function draw() {
-  background(255);
+ 
+  if(mouseX < width/2) {
+    serialWriteData("255");
+  }else {
+    serialWriteData("0");
+  }
 }
 
 function onSerialErrorOccurred(eventSender, error) {
@@ -33,14 +46,21 @@ function onSerialConnectionClosed(eventSender) {
 }
 
 function onSerialDataReceived(eventSender, newData) {
+ // bg = parseInt(newData);
   console.log("onSerialDataReceived", newData);
 }
 
 //extra function to send data from p5.js to Arduino
 function serialWriteData(writeData) {
   if (serial.isOpen()) {
-    console.log("serialWriteData", writeData);
-    serial.writeLine(writeData);
+    const timeSinceLastTransmitMs = millis() - timestampLastTransmit;
+    if (timeSinceLastTransmitMs > MIN_TIME_BETWEEN_TRANSMISSIONS_MS) {
+      serial.writeLine(writeData);
+      timestampLastTransmit = millis();
+      console.log("serialWriteData", writeData);
+    }else {
+      console.log("Time since last transmit was "  + timeSinceLastTransmitMs + "ms");
+    }
   } 
 }   
 

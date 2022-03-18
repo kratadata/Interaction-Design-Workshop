@@ -13,6 +13,9 @@ function draw() {
     line(150,0,150,height);
     line(250,0,250,height);
 
+	// || OR 
+	// && AND
+
 	if(mouseX > 0 && mouseX < 150) {
 		circle(mouseX, mouseY, 50)
 	} else if (mouseX > 150 && mouseX < 250){
