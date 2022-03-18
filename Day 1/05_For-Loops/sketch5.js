@@ -16,7 +16,7 @@ let randomColor;
 function setup() {
   createCanvas(800, 800);
   background(100);
-  noLoop();
+  //noLoop();
 
   xPos = width/2;
   yPos = height/2;

@@ -7,15 +7,15 @@ function setup() {
 
 function draw() {
   background(255);
-  smiley(200 - offset, 150);
+ // smiley(200 - offset, 150);
 
 
   fill(0);
   offset = mouseY / 2;
- /*  smiley(mouseX - offset, mouseY - offset);
+  smiley(mouseX - offset, mouseY - offset);
   smiley(mouseX - offset, mouseY + offset);
   smiley(mouseX + offset, mouseY + offset);
-  smiley(mouseX + offset, mouseY - offset); */
+  smiley(mouseX + offset, mouseY - offset); 
 
 
 }
